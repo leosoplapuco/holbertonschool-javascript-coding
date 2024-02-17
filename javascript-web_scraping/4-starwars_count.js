@@ -12,9 +12,9 @@ request(reqURL, function (error, response, body) {
     const results = jso['results'];
     let count = 0;
     for (let i = 0; i < results.length; i++) {
-      let chars = (results[i]['characters']);
+      const chars = (results[i]['characters']);
       for (let j = 0; j < chars.length; j++) {
-        let check18 = chars[j].endsWith('18/');
+        const check18 = chars[j].endsWith('18/');
         if (check18) {
           count++;
         }
