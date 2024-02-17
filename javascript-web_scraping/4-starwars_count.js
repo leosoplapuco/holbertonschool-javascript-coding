@@ -2,8 +2,8 @@
 // printing the number of movies
 
 const args = process.argv;
-let reqURL = args[2];
-let request = require('request');
+const reqURL = args[2];
+const request = require('request');
 request(reqURL, function (error, response, body) {
   if (error) {
     console.log('error:', error); // Print the error if one occurred
@@ -23,4 +23,3 @@ request(reqURL, function (error, response, body) {
     console.log(count);
   }
 });
-
