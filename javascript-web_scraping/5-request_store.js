@@ -1,5 +1,5 @@
 #!/usr/bin/node
-//Getting data
+// Getting data
 
 const fs = require('fs');
 const request = require('request');
